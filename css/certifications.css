@@ -1,0 +1,41 @@
+/* Certifications Layout */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.cert-card {
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.cert-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.cert-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-info .issuer {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.cert-info .date {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
